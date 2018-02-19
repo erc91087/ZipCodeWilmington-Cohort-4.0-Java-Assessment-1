@@ -1,19 +1,40 @@
 package com.zipcodewilmington.assessment1.part1;
 
+
+
 /**
  * Created by leon on 2/16/18.
  */
 public class RockPaperSissorsEvaluator {
     protected static final String ROCK = "rock";
     protected static final String PAPER = "paper";
-    protected static final String SCISSOR = "scissor";
+    protected static final String SCISSORS = "scissors";
 
     /**
      * @param handSign a string representative of a hand sign
      * @return the respective winning move
      */
     public String getWinningMove(String handSign) {
-        return null;
+
+            String winner = "";
+//        String rockWinner = "rock";
+//        String paperWinner = "paper";
+//        String scissorsWinner = "scissors";
+
+        for( int i = 0; i < handSign.length(); i++){
+            if (handSign.equals(i)){
+                winner.equals(ROCK);
+            }
+            else if (handSign.equals(i)){
+                winner.equals(PAPER);
+
+            }
+            else if (handSign.equals(i)){
+                winner.equals(SCISSORS);
+            }
+        }
+
+        return winner;
     }
 
     /**
